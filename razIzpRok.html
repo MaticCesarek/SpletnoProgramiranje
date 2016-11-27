@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>FRRZČ</title>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="css/stil.css" />
+	</head>
+	<body>
+		<header>
+			<div class="centered-content">
+				<a href="dashboard-profesor.html"><img src="logo.png" alt="Logotip" /></a>
+				<span>Fakulteta za raziskovanje rude in zapravljanje časa</span>
+				<div class="header-name">Janez Kamnolomec</div>
+			</div>
+		</header>
+		<div class="centered-content" id="main">
+			<nav>
+				
+				<ul>
+					<li><a href="razIzpRok.html">Razpiši nov izpitni rok</a></li>
+					<li><a href="vnosOcen.html">Vnos ocen</a></li>
+				</ul>
+			</nav>
+			<section>
+				<h2>Janez Kamnolomec </h2>
+				<article>
+					<h2>Izberi predmet</h2>
+					<select>
+						<option value="razRude">Raziskovanje rude 6321123</option>
+						<option value="razRude2">Raziskovanje rude 6321125</option>
+						<option value="razOsvRude">Raziskovanje osnovne rude</option>
+					</select>
+					
+					<div class="forma">
+						<form method="POST" action="razpisiIzpitniRok.html">
+							<label>Datum:<input type="date" name="date"  required></label>
+							<label>Število prostih mest:<input type="number" placeholder="150" title="število prostih mest" required /></label>
+							<label>Komentar (po želji): </label><textarea name="komentar" rows="10" cols="30" ></textarea>
+							<input id="gumb" type="submit" value="Pošlji prošnjo!" />
+						</form>
+					</div>
+				</article>
+				
+			</section>
+		</div>
+		<footer>
+			<div class="centered-content">
+				<span>FRRZČ - Fakulteta za raziskovanje rude in zapravljanje časa</span>
+			</div>
+		</footer>
+	</body>
+</html>

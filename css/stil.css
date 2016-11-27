@@ -1,0 +1,109 @@
+.header-name {
+	float:right;
+	clear:right;
+}
+.centered-content {
+	max-width:960px;
+	margin-left:auto;
+	margin-right:auto;
+	
+}
+header, footer {
+	background-color:#DFE2DB;
+}
+
+body {
+	margin:0px;
+	box-sizing:border-box;
+	display:flex;
+	flex-flow:column;
+	min-height:100vh;
+}
+#main {
+	flex-grow:1;
+	
+	display:flex;
+	background-color:#F8F8FF;
+}
+nav {
+	box-sizing:content-box;
+	background-color:#F8F8FF;
+}
+table{
+	border-collapse: separate;
+	table-layout: auto;
+	border-collapse: collapse;
+}
+
+
+th, td {
+    padding: 1px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+nav li {
+ 
+ list-style-type: none;
+ padding: 5px;
+ margin: 2px;
+
+}
+.forma form{
+	width:350px;
+	display:flex;
+	flex-flow:column;
+}
+.prijava form{
+	width:200px;
+	display:flex;
+	flex-flow:column;
+}
+
+.zanimivostiImage{
+	width:304px;
+	height:228px;
+}
+.drobniTisk{
+	font-size:11px
+}
+nav ul {
+ float:left;
+ list-style-type: none;
+ padding: 5px;
+ margin: 2px;
+}
+#main {
+  flex-flow:column;
+}
+@media screen
+  and (min-width: 420px) {
+    nav{
+		display:block;
+		border:2px solid black;
+	}
+	nav li{
+		float:left;
+	}
+	th, td {
+    padding: 8px;
+
+	}
+	
+}
+@media screen
+  and (min-width: 1024px) {
+	
+    nav li {
+ 	  float:none;
+    }
+	.centered-content {
+		width:960px;
+	}
+	#main {
+		flex-flow:row;
+	}
+	section{
+	padding-left:20px;
+	}
+}
